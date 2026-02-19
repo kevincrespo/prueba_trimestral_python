@@ -1,4 +1,3 @@
-# auth.py
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.security import OAuth2PasswordRequestForm
 from security import hash_password, verify_password, create_token
@@ -20,3 +19,4 @@ def login(form: OAuth2PasswordRequestForm = Depends()):
 
     token = create_token(form.username)
     return {"access_token": token, "token_type": "bearer"}
+# 

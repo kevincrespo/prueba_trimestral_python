@@ -20,3 +20,4 @@ def create_token(username: str) -> str:
 def decode_token(token: str) -> str:
     payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
     return payload["sub"]
+# 

@@ -9,3 +9,4 @@ class Incidencia(Base):
     descripcion = Column(Text, nullable=False)
     prioridad = Column(String(20), nullable=False)
     estado = Column(String(20), nullable=False)
+# 
